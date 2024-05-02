@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/link";
-import Header from "./components/layout/Header";
-import Hero from "./components/layout/Hero";
-import HomeMenu from "./components/layout/HomeMenu";
+import Header from "@/app/components/layout/Header";
+import Hero from "@/app/components/layout/Hero";
+import HomeMenu from "@/app/components/layout/HomeMenu";
 import MenuItems from "./components/menu/MenuItems";
-import SectionHeaders from "@/app/components/layout/SectionHeaders";
+import SectionHeader from "@/app/components/layout/SectionHeader"
 
 export default function Home(){
   return(
@@ -13,7 +13,7 @@ export default function Home(){
     <Hero/>
     <HomeMenu/>
     <section className="text-center my-16">
-    <SectionHeaders
+    <SectionHeader
        subHeader={'Out story'}
        mainHeader={'About us'}
        />
@@ -26,7 +26,7 @@ export default function Home(){
        </div>
     </section>
     <section className="text-center my-8">
-      <SectionHeaders subHeader={'Don\'t hesitate'}
+      <SectionHeader subHeader={'Don\'t hesitate'}
                       mainHeader={'Contact us'}/>
       <div className="mt-8">
       <a className="text-4xl underline text-gray-500" href="tel:+46738123123">+46 738 123 123</a>
